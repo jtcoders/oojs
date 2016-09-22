@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exercise: Extending Objects</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font-family: sans-serif;
+        width: 94%;
+        max-width: 80em;
+        margin: 0 auto;
+      }      
+      li {
+        line-height: 1.5em;
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Exercise: Extending Objects</h1>
+      <p>In this exercise, you will use object oriented programming concepts to extend
+        a custom object in JavaScript.</p>
+      <ol>
+        <li>Use <a href="http://codepen.io" target="_blank">Codepen</a> for this exercise, with the console open.</li>
+        <li>Start with your solution from the last exercise (or <a href="exercise_oo_solution.js">copy it from here</a>)
+        <li>Create a new object called <code>MusicVideo</code> that extends <code>Video</code>. Its constructor
+          should also take in an <code>artist</code> argument.
+        <li>Instantiate a new <code>MusicVideo</code> object and call the <code>watch()</code> method on it.</li>
+        <li>Add a method to MusicVideo called <code>rockOut()</code> that uses <code>console.log</code> to output a string like "You rocked out to La Bamba by Ritchie Valens!.
+        </li>
+        <li>Bonus: Use an array of data and a for loop to instantiate 5 <code>MusicVideo</code> objects.</li>
+        <li>Bonus: Make an array of video data with both normal videos and music videos, loop through them, and decide on each one whether to make it a <code>Video</code> or <code>MusicVideo</code> object.</li>
+      </ol>
+      <button class="btn" onclick="showSolution(1)">See Solution</button>
+      <p><a id="solution1" style="display:none;" href="exercise_extend_solution.js" target="_blank">View Solution</a></p>
+
+  <script>
+        function showSolution(num) {
+          if (confirm('You surrrrre? You can ask for help first, if you want!')) {
+            document.getElementById('solution' + num).style.display = 'block';
+          }
+        }
+  </script>
+      
+  </body>
+</html>

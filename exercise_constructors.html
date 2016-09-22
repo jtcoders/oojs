@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exercise: Constructors</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font-family: sans-serif;
+        width: 94%;
+        max-width: 80em;
+        margin: 0 auto;
+      }      
+      li {
+        line-height: 1.5em;
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Exercise: Constructors</h1>
+      <p>In this exercise, you will use object literals to make cleaner constructors for objects.</p>
+      <ol>
+        <li>Use <a href="http://codepen.io" target="_blank">Codepen</a> for this exercise, with the console open.</li>
+        <li>Start with your solution from the last exercise (or <a href="exercise_extend_solution.js">copy it from here</a>)
+        <li>Comment out the <code>MusicVideo</code> code, as you'll be working on changing <code>Video</code> first.
+        <li>Change the <code>Video</code> constructor function to accept a single object literal argument instead of multiple arguments. 
+        <li>Create a new <code>Video</code> object and call <code>watch()</code> on it.
+        <li>Make the arguments optional by giving them default values if they're not specified.
+        <li>Bonus: Change the <code>MusicVideo</code> constructor function to also accept a single object literal argument instead of multiple arguments. Test it by calling it at least once.
+        <li>Super Bonus: make sure that if the object literal is missing some values, that default values are used instead of <code>undefined</code>
+
+      </ol>
+      <button class="btn" onclick="showSolution(1)">See Solution</button>
+      <p><a id="solution1" style="display:none;" href="exercise_constructors_solution.js" target="_blank">View Solution</a></p>
+
+  <script>
+        function showSolution(num) {
+          if (confirm('You surrrrre? You can ask for help first, if you want!')) {
+            document.getElementById('solution' + num).style.display = 'block';
+          }
+        }
+  </script>
+      
+  </body>
+</html>
