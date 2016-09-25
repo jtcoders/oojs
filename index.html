@@ -174,20 +174,6 @@ var book = new Book({
           <h1>Optional Arguments</h1>
           
 <pre><code class="javascript">function Book(config) {
-  this.title = config.title;
-  this.author = config.author;
-  this.numPages = config.numPages;
-  this.currentPage = 0;
-}
-
-var book = new Book({
-    title: "Robot Dreams",
-    author: "Isaac Asimov",
-    numPages: 320
-});</pre></code>
-            
-          <p>versus:</p>
-<pre><code class="javascript">function Book(config) {
   this.title = config.title || "Untitled";
   this.author = config.author || "Unknown";
   this.numPages = config.numPages || 100;
